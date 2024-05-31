@@ -41,7 +41,7 @@ This command will ask the Author details
  > Alexander
 
  Enter author birthday?:
- > 2024-03-20
+ > 1990-03-20
 
  Enter author biography?:
  > Times Bestselling author of 32
