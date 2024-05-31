@@ -10,16 +10,16 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
 
-
+Route::get('/', function () {
+    return view('login');
+});
 
 
 Route::post('/login', [AuthController::class, 'Login'])->name('login');
 
 Route::middleware([checkAuthToken::class])->group(function () {
 
-    Route::get('/', function () {
-        return view('login');
-    });
+
 
     Route::get('/authors', [AuthorController::class, 'getAuthors'])->name('authors.index');
 
